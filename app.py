@@ -119,8 +119,8 @@ with col2:
             pd_probability = calculate_pd(age, loan_amount, loan_term, city, education)
 
             if loan_amount > 15000:
-                if 0.3 <= pd_probability <= 0.7: assessment = "Unsure Default (High-Value)"
-                elif pd_probability > 0.7: assessment = "Sure Default"
+                if 0.3 <= pd_probability <= 0.55: assessment = "Unsure Default (High-Value)"
+                elif pd_probability > 0.55: assessment = "Sure Default"
                 else: assessment = "Sure Non-Default"
             else:
                 if 0.4 <= pd_probability <= 0.6: assessment = "Unsure Default"
