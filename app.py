@@ -55,9 +55,9 @@ def calculate_pd(age, loan_amount, loan_term, city, education):
 
 def get_applicant_profile(age, education, loan_amount, city):
     """Matches an applicant to a new, more robust set of pre-defined profiles."""
-    if loan_amount > 20000:
+    if loan_amount > 10000:
         profile_name = "High-Value Applicant"
-        profile_details = "- Loan Amount > €20,000"
+        profile_details = "- Loan Amount > €10,000"
         profile_insight = "This is a significant loan amount where defaults are costly. A manual review by a senior officer is always recommended for this segment, regardless of the PD score."
         return profile_name, profile_details, profile_insight
         
